@@ -3,15 +3,13 @@ export rootfs=/opt/b2qt/2.0.1/sysroots/odroid-c2-mate
 export toolchain=/opt/toolchains/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux/bin/aarch64-linux-gnu-
 
 ./configure \
+ -prefix /usr/local \
+ -extprefix $rootfs/usr/local \
  -opensource \
  -release \
  -make libs \
  -confirm-license \
- -debug \
  -developer-build \
- -prefix /usr/local \
- -hostprefix $PWD \
- -extprefix $rootfs/usr/local \
  -c++std c++11 \
  -sysroot $rootfs \
  -nomake tests \
