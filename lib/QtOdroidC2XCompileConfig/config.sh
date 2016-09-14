@@ -3,7 +3,9 @@ export rootfs=/opt/b2qt/2.0.1/sysroots/odroid-c2-mate
 export toolchain=/opt/toolchains/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux/bin/aarch64-linux-gnu-
 
 ./configure \
- -commercial \
+ -opensource \
+ -release \
+ -make libs \
  -confirm-license \
  -debug \
  -developer-build \
@@ -31,6 +33,7 @@ export toolchain=/opt/toolchains/gcc-linaro-aarch64-linux-gnu-4.9-2014.09_linux/
  -device-option CROSS_COMPILE=$toolchain \
  -xplatform devices/linux-odroid-c2-g++ \
  -gstreamer 1.0 \
+# -no-use-gold-linker \
 # -v \
 
 #  -xplatform devices/linux-odroid-c2-g++
