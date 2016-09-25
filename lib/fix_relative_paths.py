@@ -5,8 +5,10 @@ import time
 remote_path_list = ['/usr', '/etc']
 remote_path_list_maybes = ['/var', '/lib']
 rootfs = '/opt/b2qt/2.0.1/sysroots/odroid-c2-mate'
+rootfs = '/opt/sysroots/odroid-c2-archlinux'
+rootfs = '/opt/sysroots/odroid-xu4-mate'
 # rootfs = '/media/scott/rootfs'
-remote_path = '/etc'
+remote_path = '/usr'
 
 relative_path_depth = remote_path.count('/')
 relativizer = ''
