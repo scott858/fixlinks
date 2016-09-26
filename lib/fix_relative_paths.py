@@ -8,7 +8,7 @@ rootfs = '/opt/b2qt/2.0.1/sysroots/odroid-c2-mate'
 rootfs = '/opt/sysroots/odroid-c2-archlinux'
 rootfs = '/opt/sysroots/odroid-xu4-mate'
 # rootfs = '/media/scott/rootfs'
-remote_path = '/usr'
+remote_path = '/etc'
 
 relative_path_depth = remote_path.count('/')
 relativizer = ''
